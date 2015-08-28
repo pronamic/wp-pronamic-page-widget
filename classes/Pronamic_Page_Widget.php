@@ -51,7 +51,7 @@ class Pronamic_Page_Widget extends WP_Widget {
 		$widgetOptions = array('classname' => 'pronamic_page_widget', 'description' => $description);
 		$controlOptions = array('width' => 500);
 
-		parent::WP_Widget('pronamic_page', __('Page', self::TEXT_DOMAIN), $widgetOptions, $controlOptions);
+		parent::__construct('pronamic_page', __('Page', self::TEXT_DOMAIN), $widgetOptions, $controlOptions);
 	}
 
 	public function widget($arguments, $instance) {

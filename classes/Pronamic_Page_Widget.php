@@ -46,7 +46,7 @@ class Pronamic_Page_Widget extends WP_Widget {
 	/**
 	 * Constructs and initialize the Google Maps meta box
 	 */
-	public function Pronamic_Page_Widget() {
+	public function __construct() {
 		$description = __('Use this widget to add an page as a widget.', self::TEXT_DOMAIN);
 		$widgetOptions = array('classname' => 'pronamic_page_widget', 'description' => $description);
 		$controlOptions = array('width' => 500);
